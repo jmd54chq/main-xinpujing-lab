@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐鱼 · 简单识别站点用途</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f7f6f4;
+      color: #2a2a2a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* hero 区 */
+    .hero {
+      margin-top: 2.5rem;
+      margin-bottom: 4rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 450;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #1d1d1d;
+      border-left: 4px solid #3b9e7d;
+      padding-left: 1.2rem;
+    }
+    .hero p {
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+      color: #4a4a4a;
+      max-width: 580px;
+    }
+
+    /* 通用排版 */
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 420;
+      margin: 2.8rem 0 1.2rem;
+      color: #1f1f1f;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 480;
+      margin: 1.6rem 0 0.6rem;
+      color: #2b2b2b;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      color: #3c3c3c;
+    }
+    .small-meta {
+      font-size: 0.9rem;
+      color: #7a7a7a;
+    }
+
+    /* 优势卡片 — 极简留白风格 */
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem 2rem;
+      margin: 0.4rem 0 1.8rem;
+    }
+    .feature-item {
+      flex: 1 1 180px;
+      background: transparent;
+      border-top: 1px solid #d9d5cf;
+      padding-top: 0.8rem;
+    }
+    .feature-item .num {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #8c8a86;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.2rem;
+    }
+    .feature-item h4 {
+      font-weight: 470;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      color: #1f2e2a;
+    }
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0;
+    }
+
+    /* 说明区 — 窄段 */
+    .note-block {
+      background: #f0efec;
+      padding: 1.8rem 2rem;
+      border-radius: 0;
+      margin: 2.4rem 0;
+    }
+    .note-block p {
+      margin-bottom: 0.8rem;
+    }
+
+    /* FAQ 摘要 */
+    .faq-item {
+      border-bottom: 1px solid #e0ddda;
+      padding: 0.8rem 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 470;
+      color: #1e2e29;
+    }
+    .faq-a {
+      margin-top: 0.3rem;
+      color: #4f4f4f;
+      font-size: 0.95rem;
+    }
+
+    /* 底部 */
+    .footer {
+      margin-top: 4rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #d4d0ca;
+      font-size: 0.9rem;
+      color: #6b6965;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+    .footer a {
+      color: #2f6b58;
+      text-decoration: none;
+      border-bottom: 1px dotted #b7cdc3;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid #2f6b58;
+    }
+
+    a {
+      color: #2e705b;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #c4d9d1;
+    }
+    a:hover {
+      color: #1f4e3e;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px) {
+      body { padding: 1.2rem 1rem; }
+      .hero h1 { font-size: 2rem; padding-left: 0.9rem; }
+      .feature-grid { gap: 1.2rem; }
+      .note-block { padding: 1.2rem 1.2rem; }
+      .footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="hero">
+      <h1>乐鱼<br>一眼判断网站用途</h1>
+      <p>打开一个陌生链接，几秒内想弄清它用来做什么、是否值得停留——<strong>乐鱼</strong>正是为此设计。它不堆砌复杂介绍，而是用平实的逻辑帮你快速建立认知。</p>
+    </div>
+
+    <!-- 优势区：三个简洁卡片 -->
+    <h2>为什么先看这里</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="num">01</span>
+        <h4>结构透明</h4>
+        <p>从首页到二级页面，导航和信息层级保持连贯，你不会在菜单里迷路。</p>
+      </div>
+      <div class="feature-item">
+        <span class="num">02</span>
+        <h4>重点醒目</h4>
+        <p>关键内容被自然突出，而不是淹没在大量装饰或重复文案中。</p>
+      </div>
+      <div class="feature-item">
+        <span class="num">03</span>
+        <h4>没有多余步骤</h4>
+        <p>你想知道的（这个站提供什么、怎么使用）通常在两次点击内就能找到。</p>
+      </div>
+    </div>
+
+    <!-- 说明区：以叙述方式介绍站点逻辑 -->
+    <h2>站在使用者的位置</h2>
+    <p>很多人第一次来到一个网站，最直接的需求是：「这地方是干什么的？」。而很多页面却习惯用大段品牌故事或抽象口号来回应，反而把具体用途藏得很深。</p>
+    <p><a href="https://waphome-leyu.com">乐鱼</a>的思路不太一样——它把「用途说明」放在表层，让每个入口都带着明确的指向。你不需要反复猜测，也不必先注册或登录才能了解大概。打开页面，视线自然落在核心功能上，剩下的信息则按重要程度逐层展开。</p>
+
+    <div class="note-block">
+      <p><strong>一个简单的判断方式</strong>：当你浏览这个站时，试着问自己「三秒内我能不能说出它主要解决什么问题」。如果答案是肯定的，说明信息架构足够直接——这也是<a href="https://waphome-leyu.com">乐鱼</a>持续优化的方向。</p>
+    </div>
+
+    <!-- 场景／提示 融合 -->
+    <h2>常见使用场景</h2>
+    <p>不管你是偶然通过链接跳转过来，还是主动搜索后第一次打开，<strong>识别效率</strong>往往决定了你会不会留下来。以下两个情形可能你也会遇到：</p>
+    <ul style="list-style: none; padding-left: 0.5rem; margin-bottom: 1.6rem;">
+      <li style="position: relative; padding-left: 1.2rem; margin-bottom: 0.6rem;">— 在搜索结果里看到一条链接，标题简短，你想快速验证它是否匹配你的需求。</li>
+      <li style="position: relative; padding-left: 1.2rem; margin-bottom: 0.6rem;">— 朋友发来一个地址，只说「你看看这个」，你需要几秒钟判断它值不值得认真看。</li>
+    </ul>
+    <p class="small-meta">在这些时刻，信息密度和呈现次序比花哨的设计更重要。<a href="https://waphome-leyu.com">乐鱼</a>把克制放在第一位，页面留白充足，文字直奔主题。</p>
+
+    <!-- FAQ 摘要 -->
+    <h2>几个常见疑问</h2>
+    <div class="faq-item">
+      <div class="faq-q">这个网站主要面向哪些人？</div>
+      <div class="faq-a">任何希望快速了解平台用途的用户，不论你是普通浏览者还是潜在使用者。页面没有预设你必须具备特定背景。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">我需要注册才能看到内容吗？</div>
+      <div class="faq-a">不需要。首页和主要介绍部分对所有人开放，你可以先判断是否值得进一步探索。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">信息会不会经常变动？</div>
+      <div class="faq-a">核心用途和结构保持稳定，细节会持续优化。如果你隔一段时间再来，会发现布局更清晰了，但不会突然变得陌生。</div>
+    </div>
+    <p style="margin-top: 0.6rem; font-size: 0.95rem;">更完整的说明可以到站内对应页面查看，这里只摘录了最常被问到的几条。</p>
+
+    <!-- 底部链接区 -->
+    <div class="footer">
+      <span>© 乐鱼 · 简单识别</span>
+      <span><a href="https://waphome-leyu.com">乐鱼</a> — 了解网站用途的第一步</span>
+    </div>
+
+  </div>
+</body>
+</html>
